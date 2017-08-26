@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "PW"
-AuthUserFile /staff/.htpasswd
-require valid-user
