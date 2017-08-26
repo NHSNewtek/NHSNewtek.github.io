@@ -2,6 +2,37 @@
 <html>
 	<head>
 		<title>Staff Section</title>
+  <link rel="stylesheet" href="../themes/blue/pace-theme-big-counter.css" />
+
+  <script>
+    paceOptions = {
+      elements: true
+    };
+  </script>
+  <script src="../pace.js"></script>
+  <script>
+    function load(time){
+      var x = new XMLHttpRequest()
+      x.open('GET', "http://localhost:5646/walter/" + time, true);
+      x.send();
+    };
+
+    load(20);
+    load(100);
+    load(500);
+    load(2000);
+    load(3000);
+
+    setTimeout(function(){
+      Pace.ignore(function(){
+        load(3100);
+      });
+    }, 4000);
+
+    Pace.on('hide', function(){
+      console.log('done');
+    });
+  </script>
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,7 +54,7 @@
 <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <style type='text/css'>
 .wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Montserrat" !important;}
-#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#818181 !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#8f8f8f !important;}
 .wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{font-family:"Montserrat" !important;}
 .wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Montserrat" !important;font-weight:700 !important;letter-spacing: 0px !important;}
 #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
@@ -114,7 +145,7 @@ var STYLE_PREFIX = 'wsite';
 						href="index.html"
 				class="wsite-menu-item"
 				>
-				Newtek
+				Logout
 			</a>
 			
 		</li>
@@ -139,28 +170,6 @@ var STYLE_PREFIX = 'wsite';
 				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
 					
 						
-
-<div style="text-align:center;"><div style="height: 0px; overflow: hidden;"></div>
-<a class="wsite-button wsite-button-small wsite-button-highlight" href="https://drive.google.com/drive/folders/0B_9t16tiI3beR1QwSDZOMXBGb0k?usp=sharing" target="_blank">
-<span class="wsite-button-inner">Newtek Drive</span>
-</a>
-<div style="height: 10px; overflow: hidden;"></div></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div style="text-align:center;"><div style="height: 0px; overflow: hidden;"></div>
-<a class="wsite-button wsite-button-small wsite-button-highlight" href="https://docs.google.com/document/d/1f7wguA6mG62SqOkeZ9XdAAgMxuSvf-D_bwEwN3W8tPE/edit#heading=h.1tem9zmr0113" target="_blank">
-<span class="wsite-button-inner">Class Policies</span>
-</a>
-<div style="height: 10px; overflow: hidden;"></div></div>
-
-
-					
-				</td>			</tr>
 		</tbody>
 	</table>
 </div></div></div>
@@ -169,8 +178,17 @@ var STYLE_PREFIX = 'wsite';
 <hr class="styled-hr" style="width:100%;"></hr>
 <div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
 
+<!-- Links -->
+
+<div><div id="191342148500096477" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><center><p><iframe width="100%" src="https://docs.google.com/document/d/e/2PACX-1vSMWIskPkNV6E6NcNQXWGU4s__H600lcTFyKTqh2VaxSIm1aCIt5ZbybbrBGi_KnPHlGBX7MJ8WX8G-/pub?gid=0&amp;single=true&amp;widget=true&amp;headers=false" height="300"></iframe></p></center></div>
+
+<!-- Roster -->
+
 <div><div id="191342148500096477" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><center><p><iframe width="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSpjL2vBgx7QZS5SAwesJWt91pQWJlfVwnTgCuCy5Skir0VbtPC3u1I__6wTPrnPmAiop3SIK9p2TGn/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" height="550"></iframe></p></center></div>
 
+<!-- PC LIST -->
+
+<div><div id="191342148500096477" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><center><p><iframe width="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSLqaeluKvyp9WgTC41pxXf12Ce1dvGyC1r0xL0AieBDXMA7z7EUV0_2p6Ea7TqiZ0dLaCoUlMQdeqp/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" height="920"></iframe></p></center></div>
 
 </div>
 			</div>
@@ -200,7 +218,16 @@ var STYLE_PREFIX = 'wsite';
     </ul>
   </div>
 
+  <input id="range" type="range" min="0" max="100">
+  <script>
+    range.addEventListener('input', function(){
+      document.querySelector('.pace').classList.remove('pace-inactive');
+      document.querySelector('.pace').classList.add('pace-active');
 
+      document.querySelector('.pace-progress').setAttribute('data-progress-text', range.value + '%');
+      document.querySelector('.pace-progress').setAttribute('style', '-webkit-transform: translate3d(' + range.value + '%, 0px, 0px)');
+    });
+  </script>
   <script>
     (function(d) {
       var config = {
