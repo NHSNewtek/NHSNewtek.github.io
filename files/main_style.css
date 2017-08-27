@@ -29,7 +29,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  .main-wrap { width: 100%; background: #ffffff; }
  .main-wrap .wsite-section-wrap:nth-child(even) { -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.05); -moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.05); -ms-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.05); box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.05); }
  .main-wrap .container { padding: 60px 40px; max-width: 1366px; }
- body:not(.splash-page).full-width-off { background-color: #3F3F3F; }
+ body:not(.splash-page).full-width-off { background-image: url("https://unsplash.it/g/1920/1080/?random"); background-attachment: fixed; }
  body:not(.splash-page).full-width-off .wrapper, body:not(.splash-page).full-width-off .unite-header { max-width: 1100px; margin: 0 auto; }
  body:not(.splash-page).full-width-off .wrapper { min-height: 100vh; background: #ffffff; }
  .footer-wrap { width: 100%; font-size: 14px; border-top: 1px solid rgba(0,0,0,0.1); }
