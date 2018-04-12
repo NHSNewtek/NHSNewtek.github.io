@@ -1,3 +1,51 @@
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff
+}
+
+::-webkit-scrollbar-thumb {
+    background: #656565
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #909090
+}
+
 .container {
     max-width: 960px;
 }
@@ -7,7 +55,7 @@
  */
 
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
+    background-color: #2d2d2d;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
