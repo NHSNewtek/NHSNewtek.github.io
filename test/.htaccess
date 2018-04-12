@@ -1,4 +1,0 @@
-AuthName "Member's Area Name"
-AuthUserFile /test/.htpasswd
-AuthType Basic
-require valid-user
